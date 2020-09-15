@@ -1,7 +1,14 @@
 :root {
     --color-primary: #5D6294;
+    --color-highlight: #94885d;
+    --color-headings: #262947;
 }
 
 body {
     margin: 0
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }

@@ -1,0 +1,36 @@
+.footer {
+    background-color: var(--color-primary);
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav, .copyright {
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    list-style: none;
+}
+
+.copyright {
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: small;
+}
+
+.spacer {
+    margin: 0 25px;
+    color: var(--color-highlight);
+    font-weight: 600;
+}

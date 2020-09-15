@@ -1,17 +1,36 @@
 import React from 'react'
-import gatsby from 'gatsby'
-import { FaBeer } from 'react-icons/fa';
+import { IconContext } from "react-icons";
+import { GiPencilBrush, GiTerror } from 'react-icons/gi';
+import { GoDeviceDesktop } from 'react-icons/go';
+import { FaMobileAlt } from 'react-icons/fa'
+import styles from './WhatIDo.module.css'
 
-const Card = () => {
-    let lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt, purus a tristique scelerisque, nibh eros auctor quam, id pretium mauris erat eget lectus. Donec viverra consectetur nisi in porta. Sed vel lectus vel lectus ultrices consectetur. Sed dignissim sapien est, eget rutrum felis dignissim eu. Aenean semper nec orci quis interdum. Quisque sit amet arcu lorem. Etiam tellus libero, auctor ac augue vulputate, condimentum auctor magna."
+const Card = (props) => {
+    let icon;
+    switch(props.icon) {
+        case "GiPencilBrush":
+            icon = <GiPencilBrush />
+            break;
+        case "GoDeviceDesktop":
+            icon = <GoDeviceDesktop />
+            break;
+        case "FaMobileAlt":
+            icon = <FaMobileAlt />
+            break;
+        default:
+            icon = <GiTerror />
+    }
+
     return (
-        <div style={{
-            display: 'inline-block',  
-            width: '33%'
-        }}>
-            <FaBeer />
-            <h2>Subtitle</h2>
-            <p>{lorem}</p>
+        <div className={styles.card}>
+            <IconContext.Provider value={{color: "#262947", size: "4em"}}>
+                <div>
+                    {icon}
+                </div>
+            </IconContext.Provider>
+            <h3 className={styles.cardTitle}>{props.subtitle}</h3>
+            <p>{props.text}</p>
+            <p>{props.cta}</p>
         </div>
     )
 }

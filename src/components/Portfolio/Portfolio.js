@@ -1,13 +1,24 @@
 import React from 'react'
-import gatsby from 'gatsby'
 import PortfolioPiece from './PortfolioPiece'
+import { portfolioData } from '../../data'
 
 const Portfolio = () => {
     return (
-        <div>
-            <PortfolioPiece />
-            <PortfolioPiece />
-            <PortfolioPiece />
+        <div id="portfolio">
+            {portfolioData.map((data, index) => {
+                return (
+                    <PortfolioPiece
+                        key={index}
+                        id={data.id} 
+                        image={data.image} 
+                        quote={data.quote} 
+                        author={data.quoteAuthor} 
+                        text={data.text} 
+                        tech={data.tech} 
+                        count={index} 
+                        heading={data.heading} />
+                )
+            })}
         </div>
     )
 }

@@ -1,23 +1,34 @@
 import React from 'react'
-import gatsby from 'gatsby'
+import styles from './Portfolio.module.css'
 
-const PortfolioPiece = () => {
-    let lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+const PortfolioPiece = (props) => {
+    let imgClass = styles.imgOdd;
+    let txtClass = styles.txtOdd;
+    let techLength = props.tech.length;
+
+    if(props.count === 0 || ((props.count % 2) === 0)) {
+        imgClass = styles.imgEven
+        txtClass = styles.txtEven
+    }
+
     return (
-        <div style={{
-            width: '100%',
-        }} >
-            <img style={{
-                width: '50%',
-                display:"inline-block"
-            }} 
-            src="https://via.placeholder.com/250" />
-            <div style={{
-                width: '50%',
-                display:"inline-block"
-            }} >
-                <h3>Portfolio Title</h3>
-                <p>{lorem}</p>
+        <div className={styles.portfolioItem} key={props.id}>
+            <img 
+                className={imgClass}
+                alt="Portfolio piece"
+                src={props.image} />
+            <div className={txtClass}>
+                <h3>{props.heading}</h3>
+                <p>{props.text}</p>
+                <p>
+                    {props.tech.map((data, i) => {
+                        return (
+                            <span key={i}>
+                                {techLength === i + 1 ? data : data + " | "}
+                            </span>
+                        )
+                    })}
+                </p>
             </div>
         </div>
     )

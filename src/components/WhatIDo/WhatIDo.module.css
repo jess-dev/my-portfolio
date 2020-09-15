@@ -1,0 +1,51 @@
+.section {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 45px;
+    flex-wrap: wrap;
+    margin-bottom: 150px;
+}
+
+.sectionTitle {
+    text-align: center;
+    font-size: 2.25rem;
+    margin: 100px 0;
+}
+
+.cardTitle, .sectionTitle {
+    color: var(--color-headings);
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+
+.cardTitle {
+    font-size: 1.5em;
+    margin: 40px 0;
+}
+
+.card {
+    text-align: center;
+    flex: 0 32%;
+}
+
+.card p {
+    text-align: left;
+    font-family: 'Raleway';
+}
+
+.card-icon {
+    color: var(--color-headings);
+    size: 1.5em;
+}
+
+@media (max-width:830px) {
+    .section {
+        flex-direction: column;
+    }
+
+    .card {
+        margin-bottom: 70px;
+    }
+}

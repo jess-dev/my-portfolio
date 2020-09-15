@@ -1,15 +1,16 @@
 import React from 'react'
-import Nav from '../Nav/Nav'
-import styles from './jumbotron.module.css'
+import styles from './Jumbotron.module.css'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Jumbotron = () => {
     return (
-        <div className={styles.wrapper}>
-            <Nav />
-            <h1 className={styles.h1}>Jessica Taylor</h1>
-            <hr />
-            <h3>Web Design & Development</h3>
-            <button>Lets Chat!</button>
+        <div id="#home" className={styles.wrapper}>
+            <div className={styles.masthead}>
+                <h1 className={styles.title}>Jessica Taylor</h1>
+                <hr />
+                <h3 className={styles.subtitle}>Web Design <span className={styles.highlight}>&</span> Development</h3>
+                <button className={styles.cta}><AnchorLink href="#contact">Lets Chat!</AnchorLink></button>
+            </div>
         </div>
     )
 }
