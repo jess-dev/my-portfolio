@@ -8,24 +8,27 @@ import { FaBars } from 'react-icons/fa'
 const Navbar = () => {
     const handleNavCollapse = () => {
         var nav = document.querySelector('#topLinks')
-        nav.style.display = nav.style.display === 'none' ? 'flex' : 'none';
+        nav.style.display = nav.style.display === "flex" ? "none" : "flex"
     }
 
     return (
-        <nav className={styles.toplinks}>
+        <div className="navWrapper">
             <button className={styles.toplinksToggle} data-toggle="collapse" onClick={handleNavCollapse} aria-controls="topLinks" data-target="#topLinks" >
-                <IconContext.Provider value={{size: "1.5em"}}>
-                    <FaBars />
-                </IconContext.Provider>
+                    <IconContext.Provider value={{size: "1.5em"}}>
+                        <FaBars />
+                    </IconContext.Provider>
             </button>
-            <ul id="topLinks" className={styles.toplinksItems}>
-                <li><Link to={'/'}>Home</Link><span className={styles.spacer}>|</span></li>
-                <li><AnchorLink href="#about">About Me</AnchorLink><span className={styles.spacer}>|</span></li>
-                <li><AnchorLink href="#portfolio">My Work</AnchorLink><span className={styles.spacer}>|</span></li>
-                <li><Link to={'/blog'}>Blog</Link><span className={styles.spacer}>|</span></li>
-                <li><AnchorLink href="#contact">Contact</AnchorLink></li>
-            </ul>
-        </nav>
+            <nav className={styles.toplinks}>
+                <ul id="topLinks" className={styles.toplinksItems}>
+                    <li><Link to={'/'}>Home</Link><span className={styles.spacer}>|</span></li>
+                    <li><AnchorLink href="#about">About Me</AnchorLink><span className={styles.spacer}>|</span></li>
+                    <li><AnchorLink href="#portfolio">My Work</AnchorLink><span className={styles.spacer}>|</span></li>
+                    <li><Link to={'/blog'}>Blog</Link><span className={styles.spacer}>|</span></li>
+                    <li><AnchorLink href="#contact">Contact</AnchorLink></li>
+                </ul>
+            </nav>
+        </div>
+        
     )
 }
 

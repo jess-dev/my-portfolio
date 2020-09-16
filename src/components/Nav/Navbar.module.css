@@ -36,6 +36,7 @@
 @media only screen and (max-width: 615px) {
     .toplinksToggle {
         display: flex;
+        z-index: 1;
     }
 
     .toplinksToggle:focus {
