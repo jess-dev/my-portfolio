@@ -40,6 +40,7 @@
 
     .content {
         flex-direction: column;
+        align-items: center;
     }
 
     .content img {
@@ -50,6 +51,7 @@
 
     .content .bio {
         width: 80%;
+        padding: 0;
     }
 }
 

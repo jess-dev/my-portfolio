@@ -5,7 +5,7 @@ import Footer from './Footer/Footer'
 
 const Layout = ({ location, title, children }) => {
   return (
-    <div>
+    <div className="container">
       <Navbar />
       <Jumbotron />
       <main>{children}</main>
