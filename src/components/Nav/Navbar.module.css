@@ -37,6 +37,7 @@
     .toplinksToggle {
         display: flex;
         z-index: 1;
+        position: fixed;
     }
 
     .toplinksToggle:focus {
