@@ -11,12 +11,12 @@ const Contact = () => {
                 <h3><a href="mailto:jessicatee84@gmail.com">jessicatee84@gmail.com</a></h3>
             </div>
             <div className={styles.socials}>
-                <IconContext.Provider value={{color: "#262947", size: "3.5em", verticalAlign: "middle"}}>
+                <IconContext.Provider value={{color: "#322a60", size: "3.5em", verticalAlign: "middle"}}>
                     <ul>
                         <a href="https://www.linkedin.com/in/jessica-taylor-b223281b/" target="_blank" rel="noreferrer"><li><FaLinkedin /><span>LinkedIn</span></li></a>
                         <a href="https://www.instagram.com/jesstaylor.dev/" target="_blank" rel="noreferrer"><li><FaInstagramSquare /><span>Instagram</span></li></a>
                         <a href="https://github.com/jess-dev" target="_blank" rel="noreferrer"><li><FaGithub /><span>Github</span></li></a>
-                        <a href="https://twitter.com/jessicaisace" target="_blank" rel="noreferrer"><li><FaTwitter /><span>Twitter</span></li></a>
+                        <a href="https://twitter.com/jesstaylor_dev" target="_blank" rel="noreferrer"><li><FaTwitter /><span>Twitter</span></li></a>
                     </ul>
                 </IconContext.Provider>
             </div>

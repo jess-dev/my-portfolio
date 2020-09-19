@@ -13,7 +13,7 @@ const Navbar = () => {
 
     return (
         <div className="navWrapper">
-            <button className={styles.toplinksToggle} data-toggle="collapse" onClick={handleNavCollapse} aria-controls="topLinks" data-target="#topLinks" >
+            <button className={styles.toplinksToggle} data-toggle="collapse" onClick={handleNavCollapse} aria-controls="topLinks" data-target="#topLinks" aria-label="Nav toggle button" title="Toggle button">
                     <IconContext.Provider value={{size: "1.5em"}}>
                         <FaBars />
                     </IconContext.Provider>
