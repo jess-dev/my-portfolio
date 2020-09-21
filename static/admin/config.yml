@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: jess-dev/my-portfolio
+  name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 
 # This line should *not* be indented
