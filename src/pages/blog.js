@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
-import Layout from "../components/layout"
+import BlogLayout from "../components/layout-blog"
 import SEO from "../components/seo"
 
 const BlogIndex = ({ data, location }) => {
@@ -10,7 +10,7 @@ const BlogIndex = ({ data, location }) => {
   const posts = data.allMarkdownRemark.edges
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <BlogLayout location={location} title={siteTitle}>
       <SEO title="All posts" />
       <Bio />
       {posts.map(({ node }) => {
@@ -35,7 +35,7 @@ const BlogIndex = ({ data, location }) => {
           </article>
         )
       })}
-    </Layout>
+    </BlogLayout>
   )
 }
 

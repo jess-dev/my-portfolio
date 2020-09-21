@@ -1,6 +1,9 @@
 ---
-title: My First Post
-date: "2020-08-29"
+layout: blog
+title: "Let's Party"
+date: 1999-12-31 11:59:59 -0800
+thumbnail: "/images/prince.jpg"
+rating: 5
 ---
 
 I have just set this up, my new gatsby portfolio site where I will show off what I have done and attempt to regularly blog about tech and what I learn as a developer.

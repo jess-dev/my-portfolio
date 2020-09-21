@@ -15,7 +15,7 @@
     font-weight: 200;
 }
 
-hr {
+.divider {
     color: var(--color-highlight);
     background-color: var(--color-highlight);
     height: 2px;

@@ -23,7 +23,7 @@ const Navbar = () => {
                     <li><Link onClick={handleNavCollapse} to={'/'}>Home</Link><span className={styles.spacer}>|</span></li>
                     <li><AnchorLink onClick={handleNavCollapse} href="#about">About Me</AnchorLink><span className={styles.spacer}>|</span></li>
                     <li><AnchorLink onClick={handleNavCollapse} href="#portfolio">My Work</AnchorLink><span className={styles.spacer}>|</span></li>
-                    {/* <li><Link to={'/blog'}>Blog</Link><span className={styles.spacer}>|</span></li> */}
+                    <li><Link to={'/blog'}>Blog</Link><span className={styles.spacer}>|</span></li>
                     <li><AnchorLink onClick={handleNavCollapse} href="#contact">Contact</AnchorLink></li>
                 </ul>
             </nav>
