@@ -5,7 +5,7 @@
   </a>
 </p>
 <h1 align="center">
-  My Portfolioo
+  My Portfolio
 </h1>
 
 A repo for my personal portfolio, still a work in progress but live all the same! :)
