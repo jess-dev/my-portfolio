@@ -28,23 +28,23 @@ export const portfolioData = [
         text: "Well I wouldn't be a very good developer if I hadn't made my own site! Designed and developed by yours truly to help me learn React & Gatsby. Have you noticed at all how lightening fast this site is? Thats Gatsby, if you'd like your visitors to be wowed by your sites speed please get in touch!",
         quote: "Jess really smashed it when I wanted her to build my site, she rocks, do yourself a favour and hire her now!",
         quoteAuthor: "Jess Taylor"
-    },
-    {
-        id: "02",
-        image: "https://res.cloudinary.com/dck40m3wf/image/upload/v1599341831/anastase-maragos-IIDHsQM1LtM-unsplash_fwcua3.jpg",
-        heading: "Test site",
-        tech: ["Gatsby", "React", "HTML/CSS"],
-        text: "Test text, this should be even and on the left hand side",
-        quote: "Jess really smashed it when I wanted her to build my site, she rocks, do yourself a favour and hire her now!",
-        quoteAuthor: "Jess Taylor"
-    },
-    {
-        id: "03",
-        image: "https://res.cloudinary.com/dck40m3wf/image/upload/v1599342495/mohammadreza-alidoost-V0FLEDlCErg-unsplash_yhowhx.jpg",
-        heading: "Test site",
-        tech: ["Gatsby", "React", "HTML/CSS"],
-        text: "Test text, this should be odd and on the right hand side",
-        quote: "Jess really smashed it when I wanted her to build my site, she rocks, do yourself a favour and hire her now!",
-        quoteAuthor: "Jess Taylor"
-    }
+     }
+    // {
+    //     id: "02",
+    //     image: "https://res.cloudinary.com/dck40m3wf/image/upload/v1599341831/anastase-maragos-IIDHsQM1LtM-unsplash_fwcua3.jpg",
+    //     heading: "Test site",
+    //     tech: ["Gatsby", "React", "HTML/CSS"],
+    //     text: "Test text, this should be even and on the left hand side",
+    //     quote: "Jess really smashed it when I wanted her to build my site, she rocks, do yourself a favour and hire her now!",
+    //     quoteAuthor: "Jess Taylor"
+    // },
+    // {
+    //     id: "03",
+    //     image: "https://res.cloudinary.com/dck40m3wf/image/upload/v1599342495/mohammadreza-alidoost-V0FLEDlCErg-unsplash_yhowhx.jpg",
+    //     heading: "Test site",
+    //     tech: ["Gatsby", "React", "HTML/CSS"],
+    //     text: "Test text, this should be odd and on the right hand side",
+    //     quote: "Jess really smashed it when I wanted her to build my site, she rocks, do yourself a favour and hire her now!",
+    //     quoteAuthor: "Jess Taylor"
+    // }
 ]
